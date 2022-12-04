@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
+  "homepage": "https://Rob-Thompson-Git.github.io/home",
   "scripts": {
     "start": "node server/server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
@@ -14,7 +17,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^7.0.0"
+    "concurrently": "^7.0.0",
+    "gh-pages": "^4.0.0"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
