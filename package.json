@@ -23,7 +23,8 @@
   "dependencies": {
     "bcrypt": "^5.1.0",
     "dayjs": "^1.11.6",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "heroku": "^7.67.1"
   },
   "engines": {
     "node": "16.17.0",
